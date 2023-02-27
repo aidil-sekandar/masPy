@@ -1,0 +1,14 @@
+{
+  "chapter" : [
+    {
+      "topic": "Apa itu python?",
+      "subtopic": [
+        {
+          "Pengenalan": "pengenalan",
+          "Pemasangan": "pemasangan",
+          "Tetapan": "tetapan"
+        }
+      ]
+    }
+  ]
+}
