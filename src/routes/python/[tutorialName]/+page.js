@@ -10,6 +10,7 @@ export const load = async ({ params, fetch }) => {
 
   return {
     content: dataContent,
-    chapters: dataChapters.chapters
+    chapters: dataChapters.chapters,
+    params: params.tutorialName
   };
 };

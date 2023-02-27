@@ -26,11 +26,6 @@ section {
   overflow-x: hidden;
 }
 
-img {
-  width: 100%;
-  border-radius: 5px;
-}
-
 a {
   text-decoration: none;
   color: var(--main-font-color);
@@ -47,4 +42,66 @@ li {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   gap: 2em;
+}
+
+.tutorial-content h1 {
+  margin-bottom: 0.4em;
+}
+
+.tutorial-content h2 {
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+.tutorial-content h3 {
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+.tutorial-content p {
+  margin-bottom: 0.8em;
+}
+
+.tutorial-content a {
+  text-decoration: underline;
+}
+
+.tutorial-content ol {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  list-style-position: inside;
+}
+
+.tutorial-content ol li {
+  display: list-item;
+  list-style: decimal;
+}
+
+.tutorial-content hr {
+  margin: 1em auto;
+  border-top: 2px solid #d3dce6;
+  width: 95%;
+}
+
+.tutorial-content img {
+  width: 100%;
+  padding: 0 1.4em;
+  margin: 1em 0;
+}
+
+.tutorial-content pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }

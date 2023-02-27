@@ -2,9 +2,9 @@
 
 Sebelum anda boleh mula *coding* menggunakan Python, anda perlu *install* **Python Interpreter** ke dalam komputer anda. Proses ini berbeza mengikut *operating system* yang anda gunakan.
 
-1. [Windows](#Windows)
-2. [Mac](#MacOs)
-3. [Linux](#Linux)
+1. [Windows](#windows)
+2. [Mac](#macos)
+3. [Linux](#linux)
 
 ---
 ## Windows
@@ -32,7 +32,7 @@ Sebelum anda boleh mula *coding* menggunakan Python, anda perlu *install* **Pyth
 
 ---
 
-## linux
+## Linux
 
 ### ***Debian Based Distro***:
 1. Buka **Terminal**
