@@ -79,6 +79,7 @@ li {
 .tutorial-content ol li {
   display: list-item;
   list-style: decimal;
+  margin-bottom: 0.3em;
 }
 
 .tutorial-content hr {
@@ -108,4 +109,12 @@ li {
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
+}
+
+.tutorial-content code {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  color: #666;
+  padding: 0.15em 0.4em;
+  font-size: 13px;
 }
