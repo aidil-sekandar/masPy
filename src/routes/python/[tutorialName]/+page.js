@@ -1,10 +1,15 @@
 /** @type {import('./$types').PageLoad} */
-export const load = async ({ params, fetch}) => {
+export const load = async ({ params, fetch }) => {
   let title = params.tutorialName;
-  const res = await fetch(`https://raw.githubusercontent.com/aidil-sekandar/masPy/main/static/tutorial/python/${title}.md`);
-  const data = await res.text()
+  const resContent = await fetch(
+    `https://raw.githubusercontent.com/aidil-sekandar/masPy/main/static/tutorial/python/${title}.md`
+  );
+  const dataContent = await resContent.text();
+  const resChapters = await fetch("https://raw.githubusercontent.com/aidil-sekandar/masPy/main/static/tutorial/python/chapter.json")
+  const dataChapters = await resChapters.json()
 
   return {
-    content: data
-  }
-}
+    content: dataContent,
+    chapters: dataChapters.chapters
+  };
+};
