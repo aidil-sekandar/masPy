@@ -1,13 +1,11 @@
 {
-  "chapter" : [
+  "chapters" : [
     {
       "topic": "Apa itu python?",
-      "subtopic": [
-        {
-          "Pengenalan": "pengenalan",
-          "Pemasangan": "pemasangan",
-          "Tetapan": "tetapan"
-        }
+      "subtopics": [
+        { "sub-title": "Pengenalan", "slug" : "pengenalan" },
+        { "sub-title": "Pemasangan", "slug" : "pemasangan" },
+        { "sub-title" : "Tetapan", "slug": "tetapan" }
       ]
     }
   ]
