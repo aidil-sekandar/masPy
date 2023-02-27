@@ -1,11 +1,108 @@
 {
-  "chapters" : [
+  "chapters": [
     {
       "topic": "Apa itu python?",
       "subtopics": [
-        { "sub-title": "Pengenalan", "slug" : "pengenalan" },
-        { "sub-title": "Pemasangan", "slug" : "pemasangan" },
-        { "sub-title" : "Tetapan", "slug": "tetapan" }
+        {
+          "sub-title": "Pengenalan",
+          "slug": "pengenalan"
+        },
+        {
+          "sub-title": "Pemasangan",
+          "slug": "pemasangan"
+        },
+        {
+          "sub-title": "Tetapan",
+          "slug": "tetapan"
+        },
+        {
+          "sub-title": "Program Pertama",
+          "slug": "program-pertama"
+        }
+      ]
+    },
+    {
+      "topic": "Perkara Asas",
+      "subtopics": [
+        {
+          "sub-title": "Variables",
+          "slug": "variables"
+        },
+        {
+          "sub-title": "Data Types",
+          "slug": "data-types"
+        },
+        {
+          "sub-title": "Operators",
+          "slug": "operators"
+        },
+        {
+          "sub-title": "Data Collections",
+          "slug": "data-collections"
+        }
+      ]
+    },
+    {
+      "topic": "Conditional Statement",
+      "subtopics": [
+        {
+          "sub-title": "if statement",
+          "slug": "if-statement"
+        },
+        {
+          "sub-title": "else statement",
+          "slug": "else-statement"
+        },
+        {
+          "sub-title": "elif statement",
+          "slug": "elif-statement"
+        },
+        {
+          "sub-title": "if statement",
+          "slug": "if-statement"
+        }
+      ]
+    },
+    {
+      "topic": "Loops",
+      "subtopics": [
+        {
+          "sub-title": "While Loop",
+          "slug": "while-loop"
+        },
+        {
+          "sub-title": "For Loop",
+          "slug": "for-loop"
+        },
+        {
+          "sub-title": "Nested For Loop",
+          "slug": "nested-for-loop"
+        }
+      ]
+    },
+    {
+      "topic": "Functions",
+      "subtopics": [
+        {
+          "sub-title": "Pengenalan Function",
+          "slug": "function"
+        },
+        {
+          "sub-title": "Function Argument",
+          "slug": "function-argument"
+        },
+        {
+          "sub-title": "Scope",
+          "slug": "scope"
+        },
+        {
+          "sub-title": "Scope",
+          "slug": "scope"
+        },
+        {
+          "sub-title": "Module dan Package",
+          "slug": "module-dan-package"
+        }
       ]
     }
   ]
