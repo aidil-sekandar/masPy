@@ -21,5 +21,6 @@
   .chapter-title {
     padding: 1em;
     border-top: 1px solid #d3dce6;
+    cursor: pointer;
   }
 </style>

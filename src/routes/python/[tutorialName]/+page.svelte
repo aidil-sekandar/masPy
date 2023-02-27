@@ -82,6 +82,9 @@
     padding: 0.5em 1.5em;
     border-radius: 5px;
   }
+  .next-pre-btn a {
+    text-decoration: none;
+  }
   .next-pre-btn a:hover {
     text-decoration: none;
     background-color: rgb(54, 54, 151);

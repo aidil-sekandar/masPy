@@ -18,6 +18,7 @@
   nav {
     width: 100vw;
     height: 60px;
+    background-color: white;
     box-shadow: rgba(167, 167, 167, 0.2) 0 0 8px 0px;
   }
   .nav-container {
