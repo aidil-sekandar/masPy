@@ -1,4 +1,7 @@
 {
+  "chapterList" : [
+    "pengenalan", "pemasangan", "tetapan", "program-pertama", "variables", "data-types", "operators", "data-collections", "if-statement", "else-statement", "elif-statement", "while-loop", "for-loop", "nested-for-loop", "function", "function-argument", "scope", "module-dan-package"
+  ],
   "chapters": [
     {
       "topic": "Apa itu python?",
@@ -56,10 +59,6 @@
         {
           "sub-title": "elif statement",
           "slug": "elif-statement"
-        },
-        {
-          "sub-title": "if statement",
-          "slug": "if-statement"
         }
       ]
     },
@@ -90,10 +89,6 @@
         {
           "sub-title": "Function Argument",
           "slug": "function-argument"
-        },
-        {
-          "sub-title": "Scope",
-          "slug": "scope"
         },
         {
           "sub-title": "Scope",
