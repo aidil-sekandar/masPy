@@ -5,10 +5,12 @@
   /** @type {import('./$types').PageData} */
   export let data;
   $: source = data.content;
+  $: currentParamIndex = data.chapterList.indexOf(data.params);
+  $: pageTitle = data.pageTitle.map((word) => word.charAt(0).toUpperCase() + word.slice(1));
 </script>
 
 <svelte:head>
-  <title>Python - {data.params}</title>
+  <title>Python - {pageTitle.join(" ")}</title>
 </svelte:head>
 
 <div class="tutorial-container">
@@ -29,16 +31,20 @@
     <SvelteMarkdown {source} />
     <div class="next-pre-btn">
       {#if data.params === "pengenalan"}
-        <a href="#"
+        <a href="/"
           ><i
             class="fa-sharp fa-solid fa-house"
             style="margin-right: .6em; margin-bottom: .15em"
           />Utama</a
         >
       {:else}
-        <a href="#"><i class="fa-solid fa-chevron-left" style="margin-right: .6em" />Sebelumnya</a>
+        <a href="/python/{data.chapterList[currentParamIndex - 1]}"
+          ><i class="fa-solid fa-chevron-left" style="margin-right: .6em" />Sebelumnya</a
+        >
       {/if}
-      <a href="#">Seterusnya <i class="fa-solid fa-chevron-right" style="margin-left: .4em" /></a>
+      <a href="/python/{data.chapterList[currentParamIndex + 1]}"
+        >Seterusnya <i class="fa-solid fa-chevron-right" style="margin-left: .4em" /></a
+      >
     </div>
   </div>
 </div>
@@ -46,7 +52,7 @@
 <style>
   .tutorial-container {
     max-width: var(--max-width);
-    margin: 2em auto;
+    margin: 2em auto 4em auto;
     padding: 0 1em;
     display: flex;
     gap: 2em;
@@ -55,6 +61,7 @@
     border: 1px solid #d3dce6;
     border-top: none;
     height: fit-content;
+    box-shadow: rgba(177, 177, 177, 0.1) 0px 4px 8px;
   }
   .chapters:first-child {
     border-top: none;
@@ -89,5 +96,13 @@
     text-decoration: none;
     background-color: rgb(54, 54, 151);
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  @media screen and (max-width: 900px) {
+    .tutorial-container {
+      flex-direction: column;
+    }
+    .chapters {
+      display: none;
+    }
   }
 </style>

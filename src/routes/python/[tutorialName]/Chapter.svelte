@@ -23,4 +23,7 @@
     border-top: 1px solid #d3dce6;
     cursor: pointer;
   }
+  .chapter-title:hover {
+    background-color: #f5f5f5;
+  }
 </style>
